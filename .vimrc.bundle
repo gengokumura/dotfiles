@@ -1,0 +1,119 @@
+" references:
+" - https://github.com/yuroyoro/dotfiles/blob/master/.vimrc.bundle
+" - http://qiita.com/rbtnn/items/39d9ba817329886e626b
+
+" NeoBundle preparation
+" =====================
+
+set nocompatible
+
+if has('vim_starting')
+  set runtimepath+=~/.vim/bundle/neobundle.vim
+endif
+
+call neobundle#begin(expand('~/.vim/bundle/'))
+
+" NeoBundle itself
+" ================
+
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+" NeoBundle
+" =========
+
+" edit
+NeoBundle 'tpope/vim-surround'
+NeoBundle 'tyru/caw.vim'
+NeoBundle 'godlygeek/tabular'
+NeoBundle 'kana/vim-textobj-user'
+NeoBundle 'kana/vim-textobj-line'
+NeoBundle 'kana/vim-textobj-entire'
+NeoBundle 'kana/vim-textobj-indent'
+NeoBundle 'kana/vim-smartword'
+NeoBundle 'Lokaltog/vim-easymotion'
+NeoBundle 'tpope/vim-repeat'
+
+" completion
+NeoBundle 'Shougo/neocomplete'
+NeoBundle 'Shougo/neosnippet.vim'
+NeoBundle 'Shougo/neosnippet-snippets'
+
+" programming
+NeoBundle 'thinca/vim-quickrun'
+
+" syntax
+NeoBundle 'elzr/vim-json'
+NeoBundle 'cakebaker/scss-syntax.vim'
+NeoBundle 'digitaltoad/vim-pug'
+NeoBundle 'othree/yajs.vim'
+NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'jwalton512/vim-blade'
+
+" utility
+NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'Shougo/vimshell'
+NeoBundle 'Shougo/vimproc', {
+      \ 'build': {
+      \   'windows': 'make -f make_mingw32.mak',
+      \   'cygwin':  'make -f make_cygwin.mak',
+      \   'mac':     'make -f make_mac.mak',
+      \   'unix':    'make -f make_unix.mak',
+      \   }
+      \ }
+NeoBundle 'ctrlpvim/ctrlp.vim'
+NeoBundle 'thinca/vim-qfreplace'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'mattn/ctrlp-ghq'
+NeoBundle 'endel/ctrlp-filetype.vim'
+NeoBundle 'mattn/ctrlp-register'
+NeoBundle 'vim-airline/vim-airline'
+NeoBundle 'vim-airline/vim-airline-themes'
+
+" 行結合
+NeoBundle "osyo-manga/vim-jplus"
+
+" colorschemes
+NeoBundle 'flazz/vim-colorschemes'
+NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'tomasr/molokai'
+NeoBundle 'w0ng/vim-hybrid'
+
+" lib
+NeoBundle 'mattn/webapi-vim'
+NeoBundle 'thinca/vim-openbuf'
+NeoBundle 'basyura/twibill.vim'
+NeoBundle 'basyura/bitly.vim'
+NeoBundle 'mattn/vim-oauth'
+NeoBundle 'osyo-manga/vim-sound'
+
+" js
+NeoBundle 'jiangmiao/simple-javascript-indenter'
+NeoBundle 'jelera/vim-javascript-syntax'
+NeoBundle 'elzr/vim-json'
+
+" php
+NeoBundle 'iakio/smarty3.vim'
+NeoBundle 'xsbeats/vim-blade'
+NeoBundle '2072/PHP-Indenting-for-VIm'
+
+" go
+NeoBundle 'vim-jp/vim-go-extra'
+
+" additional runtimepath
+" ======================
+
+" golang
+exe "set runtimepath+=".globpath($GOPATH, "src/github.com/nsf/gocode/vim")
+
+" web color
+NeoBundle 'lilydjwg/colorizer'
+NeoBundle 'pasela/unite-webcolorname'
+
+" NeoBundle ending
+" ================
+
+call neobundle#end()
+
+filetype plugin indent on
+
+NeoBundleCheck
