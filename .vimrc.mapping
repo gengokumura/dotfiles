@@ -60,5 +60,3 @@ noremap! <C-c> <Nop>
 " productivity
 nnoremap <Leader>w :w<CR>
 nnoremap ; :
-
-

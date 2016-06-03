@@ -33,6 +33,9 @@ NeoBundle 'kana/vim-smartword'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'tpope/vim-repeat'
 
+" space
+NeoBundle 'bronson/vim-trailing-whitespace'
+
 " completion
 NeoBundle 'Shougo/neocomplete'
 NeoBundle 'Shougo/neosnippet.vim'
@@ -49,6 +52,9 @@ NeoBundle 'othree/yajs.vim'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'jwalton512/vim-blade'
 
+
+
+NeoBundle 'tomtom/tcomment_vim'
 " utility
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'Shougo/vimshell'
@@ -69,10 +75,24 @@ NeoBundle 'mattn/ctrlp-register'
 NeoBundle 'vim-airline/vim-airline'
 NeoBundle 'vim-airline/vim-airline-themes'
 
+" edit
+NeoBundle 'mattn/emmet-vim'
+
 " 行結合
 NeoBundle "osyo-manga/vim-jplus"
 
+" node
+NeoBundle 'moll/vim-node'
+NeoBundle 'pangloss/vim-javascript'
+NeoBundle 'thinca/vim-quickrun'
+
+NeoBundle 'leafgarland/typescript-vim'
+
+
 " colorschemes
+NeoBundle 'nanotech/jellybeans.vim'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'ujihisa/unite-colorscheme'
 NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'tomasr/molokai'

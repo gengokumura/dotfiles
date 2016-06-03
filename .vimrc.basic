@@ -121,5 +121,3 @@ augroup jinja
 augroup END
 
 let mapleader=" "
-
-
